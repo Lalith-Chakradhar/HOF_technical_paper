@@ -92,7 +92,7 @@ console.log(doubled)
 ```
 
 
-### filter - 
+### filter() - 
 The `filter()` method is a higher order function that takes a function as an argument and applies it to each element of the array. It filters out elements that do not satisfy the given condition and returns a new array with the elements that pass the test, without mutating the original array.
 
 Return type: A new array with elements that pass the condition.
@@ -124,7 +124,7 @@ console.log(evenNumbers);
 ```
 
 
-### reduce - 
+### reduce() - 
 The `reduce()` method is a higher order function that takes a function as its first argument and an initial accumulator value as its second argument. It iterates over the array, applying the function to each element and accumulating the result, which is then returned as a single value. This method does not mutate the original array.
 
 Return type: A single value resulting from the reduction process.
@@ -161,7 +161,7 @@ console.log(sum)
 ```
 
 
-### find - 
+### find() - 
 The `find()` method is a higher-order function that is used to search for the first element in an array that satisfies a given condition specified by a callback function. It returns the value of the first element that matches the condition or `undefined` if no match is found.
 
 Return type: The first element that satisfies the condition, or `undefined` if no element matches.
@@ -192,7 +192,7 @@ console.log(found);
 ```
 
 
-### includes -
+### includes() -
 The `includes()` method checks if an array contains a specific element. It returns `true` if the element is found and `false` if it is not.
 
 Return type: `true` or `false` (boolean).
@@ -221,7 +221,7 @@ console.log(numbers.includes(5));
 ```
 
 
-### forEach -
+### forEach() -
 The `forEach()` method executes a provided function once for each element in the array.
 
 Return type: It does not return a value or array.
@@ -255,7 +255,7 @@ numbers.forEach((number) => {
 ```
 
 
-### splice -
+### splice() -
 The `splice()` method is used to change the contents of an array by removing, replacing, or adding elements at a specific position. It MUTATES the original array.
 
 Return type: An array containing the removed elements (if any).
@@ -296,7 +296,7 @@ console.log(numbers);
 ```
 
 
-### reverse -
+### reverse() -
 The `reverse()` method reverses the order of the elements in an array in place. It MUTATES the original array.
 
 Return type: The reversed array (the same array object).
@@ -319,6 +319,7 @@ console.log(numbers);
 //Output - [4, 17, 9, 10, 20]
 
 ```
+
 ## References - 
 
 1. [Callback Functions](https://www.youtube.com/watch?v=btj35dh3_U8&t=249s)
