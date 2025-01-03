@@ -231,4 +231,5 @@ numbers.forEach((number) => {
 1. [Callback Functions](https://www.youtube.com/watch?v=btj35dh3_U8&t=249s)
 2. [Higher Order Functions](https://www.youtube.com/watch?v=HkWxvB1RJq0&t=964s)
 3. [map, filter and reduce](https://www.youtube.com/watch?v=zdp0zrpKzIE)
-4. [find and forEach](https://www.w3schools.com/JsrEF/jsref_obj_array.asp)
+4. [find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
+5. [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
