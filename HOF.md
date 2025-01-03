@@ -192,35 +192,6 @@ console.log(found);
 ```
 
 
-### includes() -
-The `includes()` method checks if an array contains a specific element. It returns `true` if the element is found and `false` if it is not.
-
-Return type: `true` or `false` (boolean).
-Mutates array?: No, it does not mutate the original array.
-
-Syntax -
-  ```
-
-  array.includes(valueToFind, fromIndex);
-  
-  ```
-- valueToFind: The value to search for in the array.
-- fromIndex (optional): The index from which to start the search. The default is 0.
-- If a negative value is provided, the search starts from the length + fromIndex position (counting from the end of the array).
-
-
-Example:
-```
-
-let numbers = [20, 10, 9, 17, 4];
-console.log(numbers.includes(10));
-//Output - true
-console.log(numbers.includes(5));
-//Output - false
-
-```
-
-
 ### forEach() -
 The `forEach()` method executes a provided function once for each element in the array.
 
@@ -255,74 +226,9 @@ numbers.forEach((number) => {
 ```
 
 
-### splice() -
-The `splice()` method is used to change the contents of an array by removing, replacing, or adding elements at a specific position. It MUTATES the original array.
-
-Return type: An array containing the removed elements (if any).
-Mutates array?: Yes, it mutates the original array.
-
-Syntax -
-```
-
-  array.splice(start, deleteCount, item1, item2, ..., itemN);
-
-```
-
-- start:
- - The index at which to begin changing the array.
- - If negative, it counts back from the end of the array (array.length + start).
-
-- deleteCount (optional):
- - The number of elements to remove starting from the start index.
- - If 0, no elements are removed.
- - If omitted, all elements from the start index to the end of the array are removed.
-
-- item1, item2, ..., itemN (optional):
- - The elements to add to the array starting at the start index.
- - If omitted, no new elements are added.
-
-Example:
-```
-
-let numbers = [20, 10, 9, 17, 4];
-numbers.splice(2, 2, 5, 6);  // Removes 2 elements at index 2 and adds 5, 6
-console.log(numbers);
-
-//Output - [20, 10, 5, 6, 4]
-
--> Explanation: `splice()` removes two elements starting at index `2` (i.e., `9` and `17`) and
-                 adds `5` and `6` in their place.
-
-```
-
-
-### reverse() -
-The `reverse()` method reverses the order of the elements in an array in place. It MUTATES the original array.
-
-Return type: The reversed array (the same array object).
-Mutates array?: Yes, it mutates the original array.
-
-Syntax -
-  ```
-
-  array.reverse();
-
-  ```
-
-Example:
-```
-
-let numbers = [20, 10, 9, 17, 4];
-numbers.reverse();
-console.log(numbers);
-
-//Output - [4, 17, 9, 10, 20]
-
-```
-
 ## References - 
 
 1. [Callback Functions](https://www.youtube.com/watch?v=btj35dh3_U8&t=249s)
 2. [Higher Order Functions](https://www.youtube.com/watch?v=HkWxvB1RJq0&t=964s)
 3. [map, filter and reduce](https://www.youtube.com/watch?v=zdp0zrpKzIE)
-4. [includes, forEach, splice and reverse](https://www.w3schools.com/JsrEF/jsref_obj_array.asp)
+4. [find and forEach](https://www.w3schools.com/JsrEF/jsref_obj_array.asp)
